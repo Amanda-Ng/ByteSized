@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ByteSized</title>
+    <!--PT Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <style>
+      body {
+        background-image: url("images/background.png");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero is-small is-primary has-text-centered">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/logo.png" alt="ByteSized"
+        /></a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="popularRecipes.html">Popular Recipes</a>
+          </li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="content">
+      <section class="search-recipes">
+        <img class="logo-words" src="images/logoWords.png" alt="ByteSized" />
+        <h2 class="subtitle">Savor the flavor in every Byte!</h2>
+        <div class="search-container">
+          <input
+            id="search"
+            class="input is-primary is-large"
+            type="text"
+            placeholder="Search for a byte"
+          />
+          <button id="submit" class="button is-large">Search</button>
+        </div>
+      </section>
+      <section class="imageHolderDiv">
+        <div class="imageholder"></div>
+        <div class="imageholder"></div>
+        <div class="imageholder"></div>
+        <div class="imageholder"></div>
+        <div class="imageholder"></div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered"></div>
+      <div class="hero-body">
+        <div id="edamam-badge" data-color="white"></div>
+      </div>
+      <script src="src/index.js"></script>
+    </footer>
+  </body>
+</html>

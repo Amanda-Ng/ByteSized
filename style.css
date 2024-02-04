@@ -1,0 +1,172 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0px;
+  font-family: "PT Sans", sans-serif;
+  overflow-y: hidden;
+}
+
+nav {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+}
+.nav-item {
+  padding-right: 15px;
+}
+
+.nav-item a {
+  background-image: linear-gradient(to right, #c83e4d, #c83e4d 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:before {
+  content: "";
+  background: #c83e4d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  background-position: 0;
+}
+
+.nav-item a:hover::before {
+  width: 100%;
+}
+#content {
+  margin: 100px;
+}
+
+.logo-words {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  position: relative;
+  top: -3px;
+}
+
+.header1 {
+  font-weight: lighter;
+  margin-left: 60px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 50px;
+  text-align: left;
+}
+.subtitle {
+  margin-top: -5px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-recipes {
+  text-align: center;
+}
+#search {
+  display: inline;
+  background-color: #e1e1e1;
+  font-size: 15pt;
+  width: 40%;
+  border-style: none;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+}
+.button {
+  display: inline;
+  background-color: #c83e4d;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #a72a39;
+}
+
+.imageHolderDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+  margin-top: 50px;
+}
+.imageholder {
+  box-sizing: border-box;
+  width: calc(20%-20px);
+  margin: 10px;
+  background-color: white;
+  height: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageholder img {
+  height: 210px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.imageholder a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  background-color: #c83e4d;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease;
+}
+.imageholder a:hover {
+  background-color: #a72a39;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
